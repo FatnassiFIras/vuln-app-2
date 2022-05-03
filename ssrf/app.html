@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WebGetter | Websites metadata.</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<center>
+		<div id="host_form" style="margin-top: 180px;">
+			<h1 class="display-4">WebGetter</h1><br>
+			<form action="rce.php" method="GET">
+				<label for="host_input" class="display-4" style="font-size: 22px;">Host/IP: </label>
+				<input id="host_input" type="text" name="hostname" placeholder="Enter the host or ip address you want to get information about." style="width: 460px;"><br><br>
+				<input type="submit" name="scan" value="Get metadata" class="btn btn-dark"> 
+			</form>
+		</div>
+		<div id="notes" style="margin-top: 60px;">
+			<h1>Few notes:</h1>
+			<li>URL Scheme is required.</li>
+			<li>Only HTTP/HTTPS is supported.</li>
+		</div>
+	</center>
+</body>
+</html>
